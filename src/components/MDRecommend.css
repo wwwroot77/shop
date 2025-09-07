@@ -1,0 +1,7 @@
+.md-recommend { padding: 32px 0; background: #f7f8fa; }
+.md-recommend h3 { text-align: center; margin: 0 0 16px 0; font-size: 1.3rem; font-weight: 600; }
+.recommend-list { display: flex; gap: 32px; justify-content: center; margin-top: 16px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.recommend { background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 20px; text-align: center; width: 300px; min-width: 220px; }
+	.recommend img { width: 100%; height: 100%; object-fit: cover; border-radius: 28px; }
+	.recommend { background: #fff; border-radius: 32px; box-shadow: 0 8px 40px rgba(0,0,0,0.10); padding: 56px; text-align: center; width: 680px; min-width: 520px; height: 680px; min-height: 520px; display: flex; flex-direction: column; justify-content: center; }
+.desc { margin-top: 10px; font-size: 1rem; color: #333; }

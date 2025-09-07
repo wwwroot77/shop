@@ -1,0 +1,10 @@
+.real-review { padding: 32px 0; background: #fff; }
+.real-review h3 { text-align: center; margin: 0 0 16px 0; font-size: 1.3rem; font-weight: 600; }
+.review-list { display: flex; gap: 32px; justify-content: center; margin-top: 16px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.real-review .review { background: #fafbfc !important; border-radius: 16px !important; box-shadow: 0 4px 16px rgba(0,0,0,0.08) !important; padding: 20px !important; display: flex !important; gap: 16px !important; align-items: flex-start !important; width: 380px !important; min-width: 320px !important; height: auto !important; }
+.real-review .review img { width: 80px !important; height: 80px !important; object-fit: cover !important; border-radius: 12px !important; flex-shrink: 0 !important; }
+.real-review .info { flex: 1 !important; }
+.real-review .user { font-weight: 500 !important; margin-bottom: 2px !important; }
+.real-review .date { color: #888 !important; font-size: 0.9em !important; margin-left: 8px !important; }
+.real-review .rating { color: #ffb400 !important; font-size: 1.1em !important; margin-bottom: 4px !important; }
+.real-review .text { color: #222 !important; line-height: 1.4 !important; }

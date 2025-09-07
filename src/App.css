@@ -1,0 +1,65 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #222;
+  min-height: 100vh;
+}
+
+html {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root, .app-root {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  background: white;
+  box-shadow: none;
+  border-radius: 0;
+  overflow-x: hidden;
+}
+
+section {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  #root, .app-root {
+    width: 100vw;
+    min-width: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  section, .header, .footer {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+@media (max-width: 600px) {
+  .product-list, .recommend-list, .review-list, .related-products {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+  .product, .recommend, .review {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .main-banner {
+    height: 180px !important;
+  }
+  .theme-img {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
