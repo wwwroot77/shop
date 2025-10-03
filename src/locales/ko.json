@@ -1,0 +1,211 @@
+{
+  "header": {
+    "logo": "Fashion Mall",
+    "searchPlaceholder": "상품 검색",
+    "login": "로그인",
+    "categories": {
+      "clothing": "의류",
+      "shoes": "신발", 
+      "bags": "가방",
+      "accessories": "액세서리",
+      "beauty": "뷰티"
+    },
+    "subcategories": {
+      "clothing": {
+        "tops": "상의",
+        "bottoms": "하의", 
+        "outerwear": "아우터",
+        "underwear": "언더웨어",
+        "sleepwear": "잠옷"
+      },
+      "shoes": {
+        "sneakers": "운동화",
+        "dressShoes": "구두",
+        "sandals": "샌들",
+        "boots": "부츠",
+        "slippers": "슬리퍼"
+      },
+      "bags": {
+        "backpacks": "백팩",
+        "toteBags": "토트백",
+        "crossbody": "크로스백",
+        "clutch": "클러치",
+        "luggage": "여행가방"
+      },
+      "accessories": {
+        "watches": "시계",
+        "necklaces": "목걸이",
+        "earrings": "귀걸이",
+        "rings": "반지",
+        "bracelets": "팔찌"
+      },
+      "beauty": {
+        "skincare": "스킨케어",
+        "makeup": "메이크업",
+        "fragrance": "향수",
+        "haircare": "헤어케어",
+        "bodycare": "바디케어"
+      }
+    }
+  },
+  "banner": {
+    "title": "새로운 컬렉션",
+    "subtitle": "최신 트렌드를 만나보세요",
+    "slides": [
+      {
+        "title": "프리미엄 브랜드 시즌 마지막 세일 최대 80% 할인",
+        "subtitle": "매력적인 여자들을 위한 라이프스타일"
+      },
+      {
+        "title": "새로운 컬렉션 출시! 신상품 30% 할인",
+        "subtitle": "트렌디한 스타일을 완성하세요"
+      },
+      {
+        "title": "럭셔리 브랜드 특가 이벤트",
+        "subtitle": "한정 기간! 놓치지 마세요"
+      },
+      {
+        "title": "봄 신상 컬렉션 사전 예약",
+        "subtitle": "예약 고객 추가 20% 할인 혜택"
+      },
+      {
+        "title": "회원가입 이벤트! 즉시 10% 쿠폰",
+        "subtitle": "지금 가입하고 혜택 받으세요"
+      }
+    ]
+  },
+  "newProducts": {
+    "title": "새로 나온 신상품!",
+    "viewAll": "전체보기",
+    "products": [
+      {
+        "name": "어반웨어 캐주얼 데님 재킷",
+        "price": "79,900원"
+      },
+      {
+        "name": "시크맨 슬림핏 네이비 블레이저", 
+        "price": "99,000원"
+      },
+      {
+        "name": "데님무드 라이트 워싱 셔츠",
+        "price": "55,000원"
+      }
+    ]
+  },
+  "categoryRanking": {
+    "title": "카테고리 랭킹",
+    "categories": ["아우터", "상의", "가방", "상하의 세트"],
+    "products": [
+      {
+        "name": "아우터 빈티지 워싱 데님 재킷",
+        "price": "65,000원"
+      },
+      {
+        "name": "루즈핏 썸머 시스루 가디건",
+        "price": "42,000원"
+      }
+    ]
+  },
+  "mdRecommend": {
+    "title": "MD가 추천하는 기획전",
+    "recommendations": [
+      {
+        "title": "바캉스 스타일",
+        "description": "더운 여름을 위한 바캉스 스타일"
+      },
+      {
+        "title": "빈티지 워싱 데님 재킷",
+        "description": "특가 할인"
+      }
+    ]
+  },
+  "realReview": {
+    "title": "리얼리뷰",
+    "reviews": [
+      {
+        "user": "최***",
+        "date": "2025.06.19",
+        "rating": 5,
+        "text": "너무 이뻐요. 정말 후회 안합니다! 너무 잘 산거 같아요."
+      },
+      {
+        "user": "김***",
+        "date": "2025.06.20",
+        "rating": 4,
+        "text": "가격대가 있지만 만족합니다. 추천해요!"
+      }
+    ]
+  },
+  "luckyOnly": {
+    "title": "오직 럭키에서만",
+    "products": [
+      {
+        "name": "데님무드 라이트 워싱 셔츠",
+        "price": "55,000원"
+      },
+      {
+        "name": "루즈핏 썸머 시스루 가디건",
+        "price": "65,000원"
+      },
+      {
+        "name": "럭셔리 실크 블라우스",
+        "price": "89,000원"
+      },
+      {
+        "name": "프리미엄 레더 자켓",
+        "price": "120,000원"
+      },
+      {
+        "name": "캐시미어 니트 가디건",
+        "price": "95,000원"
+      },
+      {
+        "name": "한정판 디자이너 코트",
+        "price": "150,000원"
+      },
+      {
+        "name": "모던 체크 울 코트",
+        "price": "135,000원"
+      },
+      {
+        "name": "빈티지 스웨터",
+        "price": "75,000원"
+      },
+      {
+        "name": "미니멀 화이트 셔츠",
+        "price": "68,000원"
+      },
+      {
+        "name": "오버사이즈 트렌치코트",
+        "price": "145,000원"
+      },
+      {
+        "name": "클래식 니트 원피스",
+        "price": "82,000원"
+      },
+      {
+        "name": "프리미엄 후드 점퍼",
+        "price": "98,000원"
+      }
+    ]
+  },
+  "footer": {
+    "logo": "쇼핑몰",
+    "links": {
+      "emailPolicy": "이메일 무단 수집 거부",
+      "privacy": "개인정보처리방침",
+      "menu1": "푸터메뉴1",
+      "menu2": "푸터메뉴2"
+    },
+    "social": {
+      "instagram": "인스타그램",
+      "youtube": "유튜브",
+      "facebook": "페이스북"
+    },
+    "info": "주소 정리란입니다.<br />T. 전화번호 E. 메일주소<br />2025 회사 . ALL RIGHTS RESERVED"
+  },
+  "language": {
+    "korean": "한국어",
+    "english": "English"
+  }
+}

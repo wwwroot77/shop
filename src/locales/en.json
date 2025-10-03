@@ -1,0 +1,211 @@
+{
+  "header": {
+    "logo": "Fashion Mall",
+    "searchPlaceholder": "Search products",
+    "login": "Login",
+    "categories": {
+      "clothing": "Clothing",
+      "shoes": "Shoes", 
+      "bags": "Bags",
+      "accessories": "Accessories",
+      "beauty": "Beauty"
+    },
+    "subcategories": {
+      "clothing": {
+        "tops": "Tops",
+        "bottoms": "Bottoms", 
+        "outerwear": "Outerwear",
+        "underwear": "Underwear",
+        "sleepwear": "Sleepwear"
+      },
+      "shoes": {
+        "sneakers": "Sneakers",
+        "dressShoes": "Dress Shoes",
+        "sandals": "Sandals",
+        "boots": "Boots",
+        "slippers": "Slippers"
+      },
+      "bags": {
+        "backpacks": "Backpacks",
+        "toteBags": "Tote Bags",
+        "crossbody": "Crossbody",
+        "clutch": "Clutch",
+        "luggage": "Luggage"
+      },
+      "accessories": {
+        "watches": "Watches",
+        "necklaces": "Necklaces",
+        "earrings": "Earrings",
+        "rings": "Rings",
+        "bracelets": "Bracelets"
+      },
+      "beauty": {
+        "skincare": "Skincare",
+        "makeup": "Makeup",
+        "fragrance": "Fragrance",
+        "haircare": "Haircare",
+        "bodycare": "Bodycare"
+      }
+    }
+  },
+  "banner": {
+    "title": "New Collection",
+    "subtitle": "Discover the latest trends",
+    "slides": [
+      {
+        "title": "Premium Brand Season Final Sale Up to 80% Off",
+        "subtitle": "Lifestyle for attractive women"
+      },
+      {
+        "title": "New Collection Launch! New Items 30% Off",
+        "subtitle": "Complete your trendy style"
+      },
+      {
+        "title": "Luxury Brand Special Event",
+        "subtitle": "Limited time! Don't miss out"
+      },
+      {
+        "title": "Spring New Collection Pre-order",
+        "subtitle": "Additional 20% discount for pre-order customers"
+      },
+      {
+        "title": "Sign-up Event! Instant 10% Coupon",
+        "subtitle": "Join now and get benefits"
+      }
+    ]
+  },
+  "newProducts": {
+    "title": "New Arrivals!",
+    "viewAll": "View All",
+    "products": [
+      {
+        "name": "Urbanwear Casual Denim Jacket",
+        "price": "$79.90"
+      },
+      {
+        "name": "Chicman Slim Fit Navy Blazer",
+        "price": "$99.00"
+      },
+      {
+        "name": "Denim Mood Light Wash Shirt",
+        "price": "$55.00"
+      }
+    ]
+  },
+  "categoryRanking": {
+    "title": "Category Ranking",
+    "categories": ["Outerwear", "Tops", "Bags", "Sets"],
+    "products": [
+      {
+        "name": "Vintage Wash Denim Jacket",
+        "price": "$65.00"
+      },
+      {
+        "name": "Loose Fit Summer See-through Cardigan",
+        "price": "$42.00"
+      }
+    ]
+  },
+  "mdRecommend": {
+    "title": "MD Recommended Events",
+    "recommendations": [
+      {
+        "title": "Vacation Style",
+        "description": "Vacation style for hot summer"
+      },
+      {
+        "title": "Vintage Wash Denim Jacket",
+        "description": "Special discount"
+      }
+    ]
+  },
+  "realReview": {
+    "title": "Real Reviews",
+    "reviews": [
+      {
+        "user": "Choi***",
+        "date": "2025.06.19",
+        "rating": 5,
+        "text": "So pretty. No regrets! I think I made a great purchase."
+      },
+      {
+        "user": "Kim***",
+        "date": "2025.06.20",
+        "rating": 4,
+        "text": "Pricey but satisfied. I recommend it!"
+      }
+    ]
+  },
+  "luckyOnly": {
+    "title": "Only at Lucky",
+    "products": [
+      {
+        "name": "Denim Mood Light Wash Shirt",
+        "price": "$55.00"
+      },
+      {
+        "name": "Loose Fit Summer See-through Cardigan",
+        "price": "$65.00"
+      },
+      {
+        "name": "Luxury Silk Blouse",
+        "price": "$89.00"
+      },
+      {
+        "name": "Premium Leather Jacket",
+        "price": "$120.00"
+      },
+      {
+        "name": "Cashmere Knit Cardigan",
+        "price": "$95.00"
+      },
+      {
+        "name": "Limited Edition Designer Coat",
+        "price": "$150.00"
+      },
+      {
+        "name": "Modern Check Wool Coat",
+        "price": "$135.00"
+      },
+      {
+        "name": "Vintage Sweater",
+        "price": "$75.00"
+      },
+      {
+        "name": "Minimal White Shirt",
+        "price": "$68.00"
+      },
+      {
+        "name": "Oversized Trench Coat",
+        "price": "$145.00"
+      },
+      {
+        "name": "Classic Knit Dress",
+        "price": "$82.00"
+      },
+      {
+        "name": "Premium Hoodie",
+        "price": "$98.00"
+      }
+    ]
+  },
+  "footer": {
+    "logo": "Shopping Mall",
+    "links": {
+      "emailPolicy": "Email Collection Rejection",
+      "privacy": "Privacy Policy",
+      "menu1": "Footer Menu 1",
+      "menu2": "Footer Menu 2"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "facebook": "Facebook"
+    },
+    "info": "Address information.<br />T. Phone Number E. Email Address<br />2025 Company . ALL RIGHTS RESERVED"
+  },
+  "language": {
+    "korean": "한국어",
+    "english": "English"
+  }
+}

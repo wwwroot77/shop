@@ -1,7 +1,127 @@
-.md-recommend { padding: 32px 0; background: #f7f8fa; }
-.md-recommend h3 { text-align: center; margin: 0 0 16px 0; font-size: 1.3rem; font-weight: 600; }
-.recommend-list { display: flex; gap: 32px; justify-content: center; margin-top: 16px; max-width: 900px; margin-left: auto; margin-right: auto; }
-.recommend { background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 20px; text-align: center; width: 300px; min-width: 220px; }
-	.recommend img { width: 100%; height: 100%; object-fit: cover; border-radius: 28px; }
-	.recommend { background: #fff; border-radius: 32px; box-shadow: 0 8px 40px rgba(0,0,0,0.10); padding: 56px; text-align: center; width: 680px; min-width: 520px; height: 680px; min-height: 520px; display: flex; flex-direction: column; justify-content: center; }
-.desc { margin-top: 10px; font-size: 1rem; color: #333; }
+.md-recommend { 
+  padding: 32px 0; 
+  background: #f7f8fa; 
+}
+
+.md-recommend h3 { 
+  text-align: center; 
+  margin: 0 0 16px 0; 
+  font-size: 1.3rem; 
+  font-weight: 600; 
+}
+
+.recommend-list { 
+  display: flex; 
+  gap: 32px; 
+  justify-content: center; 
+  margin-top: 16px; 
+  max-width: 900px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.recommend { 
+  background: #fff; 
+  border-radius: 32px; 
+  box-shadow: 0 8px 40px rgba(0,0,0,0.10); 
+  padding: 56px; 
+  text-align: center; 
+  width: 680px; 
+  min-width: 520px; 
+  height: 680px; 
+  min-height: 520px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.recommend img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 28px; 
+}
+
+.desc { 
+  margin-top: 10px; 
+  font-size: 1rem; 
+  color: #333; 
+}
+
+/* 태블릿 최적화 */
+@media (max-width: 1024px) {
+  .md-recommend { 
+    padding: 24px 0; 
+  }
+  
+  .recommend-list { 
+    gap: 24px; 
+    max-width: 700px;
+  }
+  
+  .recommend { 
+    width: 450px; 
+    min-width: 400px; 
+    height: 450px; 
+    min-height: 400px; 
+    padding: 40px; 
+  }
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+  .md-recommend { 
+    padding: 20px 0; 
+  }
+  
+  .md-recommend h3 { 
+    font-size: 1.2rem; 
+  }
+  
+  .recommend-list { 
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: center !important;
+    padding: 0 12px;
+  }
+  
+  .recommend { 
+    width: 100% !important; 
+    min-width: 280px !important; 
+    max-width: 400px !important;
+    height: auto !important; 
+    min-height: 300px !important; 
+    max-height: none !important;
+    padding: 30px 20px !important;
+  }
+  
+  .desc { 
+    font-size: 0.95rem; 
+  }
+}
+
+/* 소형 모바일 최적화 */
+@media (max-width: 480px) {
+  .md-recommend { 
+    padding: 16px 0; 
+  }
+  
+  .md-recommend h3 { 
+    font-size: 1.1rem; 
+  }
+  
+  .recommend-list { 
+    gap: 12px !important;
+    padding: 0 8px;
+  }
+  
+  .recommend { 
+    min-width: 260px !important; 
+    max-width: 320px !important;
+    padding: 24px 16px !important;
+  }
+  
+  .desc { 
+    font-size: 0.9rem; 
+  }
+}

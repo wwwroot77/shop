@@ -1,6 +1,135 @@
-.footer { background: #222; color: #fff; padding: 32px 0 16px 0; text-align: center; }
-.footer-logo { font-size: 1.5rem; font-weight: bold; margin-bottom: 12px; }
-.footer-links, .footer-sns { display: flex; justify-content: center; gap: 24px; margin-bottom: 8px; }
-.footer-links a, .footer-sns a { color: #fff; text-decoration: none; font-size: 1rem; }
-.footer-links a:hover, .footer-sns a:hover { text-decoration: underline; }
-.footer-info { color: #bbb; font-size: 0.95rem; margin-top: 12px; }
+.footer { 
+  background: #222; 
+  color: #fff; 
+  padding: 32px 0 16px 0; 
+  text-align: center; 
+}
+
+.footer-logo { 
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  margin-bottom: 12px; 
+}
+
+.footer-links, .footer-sns { 
+  display: flex; 
+  justify-content: center; 
+  gap: 24px; 
+  margin-bottom: 8px; 
+  flex-wrap: wrap;
+}
+
+.footer-links a, .footer-sns a { 
+  color: #fff; 
+  text-decoration: none; 
+  font-size: 1rem; 
+  padding: 4px 8px;
+}
+
+.footer-links a:hover, .footer-sns a:hover { 
+  text-decoration: underline; 
+}
+
+.footer-info { 
+  color: #bbb; 
+  font-size: 0.95rem; 
+  margin-top: 12px; 
+  line-height: 1.4;
+}
+
+/* 태블릿 최적화 */
+@media (max-width: 1024px) {
+  .footer { 
+    padding: 28px 0 14px 0; 
+  }
+  
+  .footer-logo { 
+    font-size: 1.4rem; 
+  }
+  
+  .footer-links, .footer-sns { 
+    gap: 20px; 
+  }
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+  .footer { 
+    padding: 24px 0 12px 0; 
+  }
+  
+  .footer-logo { 
+    font-size: 1.3rem; 
+    margin-bottom: 10px; 
+  }
+  
+  .footer-links, .footer-sns { 
+    gap: 16px; 
+    margin-bottom: 6px; 
+  }
+  
+  .footer-links a, .footer-sns a { 
+    font-size: 0.9rem; 
+    padding: 3px 6px;
+  }
+  
+  .footer-info { 
+    font-size: 0.9rem; 
+    margin-top: 10px; 
+    padding: 0 12px;
+  }
+}
+
+/* 소형 모바일 최적화 */
+@media (max-width: 480px) {
+  .footer { 
+    padding: 20px 0 10px 0; 
+  }
+  
+  .footer-logo { 
+    font-size: 1.2rem; 
+    margin-bottom: 8px; 
+  }
+  
+  .footer-links, .footer-sns { 
+    gap: 12px; 
+    margin-bottom: 4px; 
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-links a, .footer-sns a { 
+    font-size: 0.85rem; 
+    padding: 2px 4px;
+  }
+  
+  .footer-info { 
+    font-size: 0.8rem; 
+    margin-top: 8px; 
+    padding: 0 8px;
+  }
+}
+
+/* 초소형 모바일 */
+@media (max-width: 360px) {
+  .footer { 
+    padding: 16px 0 8px 0; 
+  }
+  
+  .footer-logo { 
+    font-size: 1.1rem; 
+  }
+  
+  .footer-links, .footer-sns { 
+    gap: 8px; 
+  }
+  
+  .footer-links a, .footer-sns a { 
+    font-size: 0.8rem; 
+  }
+  
+  .footer-info { 
+    font-size: 0.75rem; 
+    padding: 0 6px;
+  }
+}

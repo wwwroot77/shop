@@ -30,7 +30,8 @@ section {
   margin-bottom: 0;
 }
 
-@media (max-width: 900px) {
+/* 태블릿 최적화 */
+@media (max-width: 1024px) {
   #root, .app-root {
     width: 100vw;
     min-width: 0;
@@ -38,28 +39,88 @@ section {
     box-shadow: none;
     padding: 0;
   }
+  
   section, .header, .footer {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  
+  .product-list, .recommend-list, .review-list, .related-products {
+    gap: 20px !important;
   }
 }
-@media (max-width: 600px) {
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+  #root, .app-root {
+    width: 100vw;
+    min-width: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  section, .header, .footer {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  
   .product-list, .recommend-list, .review-list, .related-products {
     flex-direction: column !important;
     align-items: stretch !important;
-    gap: 12px !important;
+    gap: 16px !important;
   }
+  
   .product, .recommend, .review {
     width: 100% !important;
     min-width: 0 !important;
     max-width: 100% !important;
   }
+  
   .main-banner {
-    height: 180px !important;
+    height: 200px !important;
+    padding: 0 12px !important;
   }
+  
   .theme-img {
     width: 100% !important;
     max-width: 100% !important;
+  }
+  
+  /* 모바일에서 텍스트 크기 조정 */
+  h1, h2, h3 {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  p {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* 소형 모바일 최적화 */
+@media (max-width: 480px) {
+  section, .header, .footer {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  
+  .product-list, .recommend-list, .review-list, .related-products {
+    gap: 12px !important;
+  }
+  
+  .main-banner {
+    height: 160px !important;
+    padding: 0 8px !important;
+  }
+  
+  h1, h2, h3 {
+    font-size: 1.3rem !important;
+  }
+  
+  p {
+    font-size: 0.85rem !important;
   }
 }
 

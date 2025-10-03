@@ -81,14 +81,93 @@
   }
 }
 
-@media (max-width: 900px) {
-  .main-banner { padding: 0 8px; }
-  .banner-text h2 { font-size: 1.5rem; }
-  .banner-text p { font-size: 1rem; }
+/* 태블릿 최적화 */
+@media (max-width: 1024px) {
+  .main-banner { 
+    padding: 0 16px; 
+    height: 280px;
+  }
+  
+  .banner-text h2 { 
+    font-size: 1.8rem; 
+  }
+  
+  .banner-text p { 
+    font-size: 1.1rem; 
+  }
+  
+  .banner-indicators {
+    bottom: 16px;
+  }
 }
 
-@media (max-width: 600px) {
-  .main-banner { height: 180px; }
-  .banner-text h2 { font-size: 1.2rem; }
-  .banner-text p { font-size: 0.9rem; }
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+  .main-banner { 
+    padding: 0 12px; 
+    height: 200px;
+  }
+  
+  .banner-text h2 { 
+    font-size: 1.4rem; 
+    margin-bottom: 6px;
+  }
+  
+  .banner-text p { 
+    font-size: 0.95rem; 
+  }
+  
+  .banner-indicators {
+    bottom: 12px;
+    gap: 6px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* 소형 모바일 최적화 */
+@media (max-width: 480px) {
+  .main-banner { 
+    padding: 0 8px; 
+    height: 160px;
+  }
+  
+  .banner-text h2 { 
+    font-size: 1.2rem; 
+    margin-bottom: 4px;
+  }
+  
+  .banner-text p { 
+    font-size: 0.85rem; 
+  }
+  
+  .banner-indicators {
+    bottom: 10px;
+    gap: 4px;
+  }
+  
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* 초소형 모바일 */
+@media (max-width: 360px) {
+  .main-banner { 
+    padding: 0 6px; 
+    height: 140px;
+  }
+  
+  .banner-text h2 { 
+    font-size: 1.1rem; 
+    margin-bottom: 3px;
+  }
+  
+  .banner-text p { 
+    font-size: 0.8rem; 
+  }
 }

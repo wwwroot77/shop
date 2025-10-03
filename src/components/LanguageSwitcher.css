@@ -1,0 +1,149 @@
+.language-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  justify-content: space-between;
+}
+
+.language-button:hover {
+  border-color: #007bff;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.1);
+}
+
+.language-button .flag {
+  font-size: 16px;
+}
+
+.language-button .language-name {
+  flex: 1;
+  text-align: left;
+}
+
+.language-button .arrow {
+  font-size: 10px;
+  color: #666;
+  transition: transform 0.2s ease;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 120px;
+  margin-top: 4px;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 12px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.language-option:hover {
+  background-color: #f8f9fa;
+}
+
+.language-option.active {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.language-option .flag {
+  font-size: 16px;
+}
+
+.language-option .language-name {
+  flex: 1;
+}
+
+/* 태블릿 최적화 */
+@media (max-width: 1024px) {
+  .language-button {
+    padding: 7px 10px;
+    min-width: 90px;
+    font-size: 13px;
+  }
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .language-button {
+    padding: 6px 8px;
+    min-width: 80px;
+    font-size: 12px;
+  }
+  
+  .language-button .language-name {
+    display: none;
+  }
+  
+  .language-dropdown {
+    min-width: 100px;
+  }
+  
+  .language-option {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+/* 소형 모바일 */
+@media (max-width: 480px) {
+  .language-button {
+    padding: 5px 6px;
+    min-width: 70px;
+    font-size: 11px;
+  }
+  
+  .language-button .flag {
+    font-size: 14px;
+  }
+  
+  .language-dropdown {
+    min-width: 90px;
+  }
+  
+  .language-option {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+}
+
+/* 초소형 모바일 */
+@media (max-width: 360px) {
+  .language-button {
+    padding: 4px 5px;
+    min-width: 60px;
+    font-size: 10px;
+  }
+  
+  .language-button .flag {
+    font-size: 12px;
+  }
+}
