@@ -16,13 +16,13 @@ const MDRecommend = () => {
       <h3>{t('mdRecommend.title')}</h3>
       <div className="recommend-list">
         {recommendations.map((rec, i) => (
-          <div className="recommend" key={i}>
+          <a className="recommend" href={`#/collection/${i}`} key={i}>
             <img src={images[i]} alt={rec.title} />
             <div className="desc">
               {rec.title}<br />
               {rec.description}
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>

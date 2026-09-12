@@ -14,10 +14,10 @@ const NewProducts = () => {
 
   return (
     <section className="new-products">
-      <h3>{t('newProducts.title')}</h3>
+      <h3>{t('newProducts.title')}</h3><p className="view-all"><a href="#/catalog">{t('newProducts.viewAll')} ?</a></p>
       <div className="product-list">
         {products.map((product, i) => (
-          <a className="product" href="#" key={i}>
+          <a className="product" href={`#/product/newProducts-${i}`} key={i}>
             <div className="product-image-wrapper">
               <img src={productImages[i]} alt={product.name} />
             </div>

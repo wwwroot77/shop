@@ -1,113 +1,20 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { categories } from '../catalog';
 import LanguageSwitcher from './LanguageSwitcher';
 import './Header.css';
-
-const Header = () => {
+export default function Header({ count = 0 }: { count?: number }) {
   const { t } = useTranslation();
-  const [openDropdown, setOpenDropdown] = useState<number | null>(null);
-
-  const menuItems = [
-    {
-      title: t('header.categories.clothing'),
-      items: [
-        t('header.subcategories.clothing.tops'),
-        t('header.subcategories.clothing.bottoms'),
-        t('header.subcategories.clothing.outerwear'),
-        t('header.subcategories.clothing.underwear'),
-        t('header.subcategories.clothing.sleepwear')
-      ]
-    },
-    {
-      title: t('header.categories.shoes'),
-      items: [
-        t('header.subcategories.shoes.sneakers'),
-        t('header.subcategories.shoes.dressShoes'),
-        t('header.subcategories.shoes.sandals'),
-        t('header.subcategories.shoes.boots'),
-        t('header.subcategories.shoes.slippers')
-      ]
-    },
-    {
-      title: t('header.categories.bags'),
-      items: [
-        t('header.subcategories.bags.backpacks'),
-        t('header.subcategories.bags.toteBags'),
-        t('header.subcategories.bags.crossbody'),
-        t('header.subcategories.bags.clutch'),
-        t('header.subcategories.bags.luggage')
-      ]
-    },
-    {
-      title: t('header.categories.accessories'),
-      items: [
-        t('header.subcategories.accessories.watches'),
-        t('header.subcategories.accessories.necklaces'),
-        t('header.subcategories.accessories.earrings'),
-        t('header.subcategories.accessories.rings'),
-        t('header.subcategories.accessories.bracelets')
-      ]
-    },
-    {
-      title: t('header.categories.beauty'),
-      items: [
-        t('header.subcategories.beauty.skincare'),
-        t('header.subcategories.beauty.makeup'),
-        t('header.subcategories.beauty.fragrance'),
-        t('header.subcategories.beauty.haircare'),
-        t('header.subcategories.beauty.bodycare')
-      ]
-    }
-  ];
-
-  const handleDropdownToggle = (index: number) => {
-    setOpenDropdown(openDropdown === index ? null : index);
-  };
-
-  return (
-    <header className="header">
-      <div className="header-container">
-        <div className="logo">{t('header.logo')}</div>
-        
-        <nav className="nav-menu">
-          {menuItems.map((menu, index) => (
-            <div 
-              key={index}
-              className="menu-item"
-              onMouseEnter={() => setOpenDropdown(index)}
-              onMouseLeave={() => setOpenDropdown(null)}
-            >
-              <button 
-                className="menu-button"
-                onClick={() => handleDropdownToggle(index)}
-              >
-                {menu.title}
-                <span className="arrow">▼</span>
-              </button>
-              {openDropdown === index && (
-                <div className="dropdown">
-                  {menu.items.map((item, itemIndex) => (
-                    <a key={itemIndex} href="#" className="dropdown-item">
-                      {item}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
-        </nav>
-
-        <div className="header-actions">
-          <LanguageSwitcher />
-          <div className="search-container">
-            <input className="search" placeholder={t('header.searchPlaceholder')} />
-            <button className="search-btn">🔍</button>
-          </div>
-          <button className="login-btn">{t('header.login')}</button>
-        </div>
-      </div>
-    </header>
-  );
-};
-
-export default Header;
+  const [open, setOpen] = useState('');
+  const [query, setQuery] = useState('');
+  return <header className="header"><div className="header-container">
+    <a className="logo" href="#/">{t('header.logo')}</a>
+    <nav className="nav-menu" aria-label={t('shop.all')}>
+      {Object.entries(categories).map(([category, subs]) => <div className="menu-item" key={category} onMouseLeave={() => setOpen('')}>
+        <button className="menu-button" aria-expanded={open === category} onClick={() => setOpen(open === category ? '' : category)} onKeyDown={e => { if (e.key === 'Escape') setOpen(''); }}>{t(`header.categories.${category}`)} <span className="arrow">▾</span></button>
+        {open === category && <div className="dropdown"><a className="dropdown-item" href={`#/catalog/${category}`} onClick={() => setOpen('')}>{t('shop.all')}</a>{subs.map(sub => <a className="dropdown-item" key={sub} href={`#/catalog/${category}/${sub}`} onClick={() => setOpen('')}>{t(`header.subcategories.${category}.${sub}`)}</a>)}</div>}
+      </div>)}
+    </nav>
+    <div className="header-actions"><LanguageSwitcher /><form className="search-container" onSubmit={e => { e.preventDefault(); window.location.hash = `/search?q=${encodeURIComponent(query.trim())}`; }}><input className="search" aria-label={t('shop.search')} placeholder={t('header.searchPlaceholder')} value={query} onChange={e => setQuery(e.target.value)} /><button className="search-btn" aria-label={t('shop.search')}>⌕</button></form><a className="menu-button" href="#/cart">{t('shop.cart')} ({count})</a><a className="login-btn" href="#/account">{t('shop.account')}</a></div>
+  </div></header>;
+}

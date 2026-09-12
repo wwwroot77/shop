@@ -5,7 +5,7 @@
     "login": "Login",
     "categories": {
       "clothing": "Clothing",
-      "shoes": "Shoes", 
+      "shoes": "Shoes",
       "bags": "Bags",
       "accessories": "Accessories",
       "beauty": "Beauty"
@@ -13,7 +13,7 @@
     "subcategories": {
       "clothing": {
         "tops": "Tops",
-        "bottoms": "Bottoms", 
+        "bottoms": "Bottoms",
         "outerwear": "Outerwear",
         "underwear": "Underwear",
         "sleepwear": "Sleepwear"
@@ -94,7 +94,12 @@
   },
   "categoryRanking": {
     "title": "Category Ranking",
-    "categories": ["Outerwear", "Tops", "Bags", "Sets"],
+    "categories": [
+      "Outerwear",
+      "Tops",
+      "Bags",
+      "Sets"
+    ],
     "products": [
       {
         "name": "Vintage Wash Denim Jacket",
@@ -194,8 +199,8 @@
     "links": {
       "emailPolicy": "Email Collection Rejection",
       "privacy": "Privacy Policy",
-      "menu1": "Footer Menu 1",
-      "menu2": "Footer Menu 2"
+      "menu1": "Customer service",
+      "menu2": "About us"
     },
     "social": {
       "instagram": "Instagram",
@@ -207,5 +212,127 @@
   "language": {
     "korean": "한국어",
     "english": "English"
+  },
+  "shop": {
+    "home": "Home",
+    "all": "All products",
+    "cart": "Bag",
+    "demo": "Demo store ? No real payments or deliveries.",
+    "search": "Search",
+    "empty": "No products match your selection.",
+    "continue": "Continue shopping",
+    "details": "Product details",
+    "size": "Size",
+    "color": "Color",
+    "cream": "Cream",
+    "black": "Black",
+    "quantity": "Quantity",
+    "add": "Add to bag",
+    "buy": "Buy now",
+    "added": "Added to your bag.",
+    "delivery": "Delivery & returns",
+    "deliveryText": "Free shipping ? Example delivery in 2?3 days. Example returns within 7 days of receipt.",
+    "description": "An effortless everyday essential",
+    "descriptionText": "An easy silhouette with considered details for everyday styling. Wear on its own or layer with your favorite pieces. Images and product information are for demonstration.",
+    "care": "Materials & care",
+    "careText": "Sample fabric: 80% cotton, 20% polyester. Hand wash separately in cold water and dry in shade.",
+    "reviews": "Reviews",
+    "remove": "Remove",
+    "total": "Total",
+    "checkout": "Place demo order",
+    "complete": "Demo order complete",
+    "completeText": "You have completed the shopping demo. No real order, payment or personal data storage took place.",
+    "loginTitle": "Try signing in",
+    "loginText": "Explore a sample member page without an account or password.",
+    "demoLogin": "Continue as demo member",
+    "account": "My account",
+    "logout": "Sign out",
+    "sort": "Sort",
+    "recommended": "Recommended",
+    "low": "Price: low to high",
+    "high": "Price: high to low",
+    "results": "{{count}} products",
+    "collectionText": "A curated edit to bring something fresh to your everyday wardrobe. Discover your favorite style.",
+    "support": "Customer service",
+    "about": "About us",
+    "supportText": "Sample service hours: weekdays 10:00?17:00. Example delivery: 2?3 days. Returns within 7 days of receipt.",
+    "aboutText": "Fashion Mall brings comfort and personal style to everyday dressing. This portfolio uses sample products.",
+    "privacyText": "This demo collects no account or payment details. Only language preferences are saved in your browser. Your bag resets on refresh.",
+    "emailText": "Unauthorized email collection is prohibited. This text is a sample store notice.",
+    "socialText": "A space for our social channels. This demo store has no linked official accounts.",
+    "notFound": "Page not found.",
+    "free": "Free",
+    "orderReview": "Review your order",
+    "option": "Selected options",
+    "sizeGuide": "Size guide",
+    "sizeText": "S: chest 50 / length 64 ? M: 53 / 67 ? L: 56 / 70 (cm). Sample measurements may vary by 1?3 cm."
+  },
+  "sampleProducts": {
+    "underwear": {
+      "name": "Underwear"
+    },
+    "sleepwear": {
+      "name": "Sleepwear"
+    },
+    "sneakers": {
+      "name": "Sneakers"
+    },
+    "dressShoes": {
+      "name": "Dress Shoes"
+    },
+    "sandals": {
+      "name": "Sandals"
+    },
+    "boots": {
+      "name": "Boots"
+    },
+    "slippers": {
+      "name": "Slippers"
+    },
+    "backpacks": {
+      "name": "Backpacks"
+    },
+    "toteBags": {
+      "name": "Tote Bags"
+    },
+    "crossbody": {
+      "name": "Crossbody"
+    },
+    "clutch": {
+      "name": "Clutch"
+    },
+    "luggage": {
+      "name": "Luggage"
+    },
+    "watches": {
+      "name": "Watches"
+    },
+    "necklaces": {
+      "name": "Necklaces"
+    },
+    "earrings": {
+      "name": "Earrings"
+    },
+    "rings": {
+      "name": "Rings"
+    },
+    "bracelets": {
+      "name": "Bracelets"
+    },
+    "skincare": {
+      "name": "Skincare"
+    },
+    "makeup": {
+      "name": "Makeup"
+    },
+    "fragrance": {
+      "name": "Fragrance"
+    },
+    "haircare": {
+      "name": "Haircare"
+    },
+    "bodycare": {
+      "name": "Bodycare"
+    }
   }
 }

@@ -17,18 +17,18 @@ const CategoryRanking = () => {
       <h3>{t('categoryRanking.title')}</h3>
       <div className="category-list">
         {categories.map((cat, i) => (
-          <button className="category-btn" key={i}>{cat}</button>
+          <button className="category-btn" onClick={() => { window.location.hash = ["/catalog/clothing/outerwear", "/catalog/clothing/tops", "/catalog/bags", "/collection/0"][i]; }} key={i}>{cat}</button>
         ))}
       </div>
       <div className="product-list">
         {products.map((product, i) => (
-          <div className="product" key={i}>
+          <a className="product" href={`#/product/categoryRanking-${i}`} key={i}>
             <div className="product-image-wrapper">
               <img src={productImages[i]} alt={product.name} />
             </div>
             <div className="name">{product.name}</div>
             <div className="price">{product.price}</div>
-          </div>
+          </a>
         ))}
       </div>
     </section>

@@ -32,9 +32,9 @@ const MainBanner = () => {
             key={index}
             className={`banner-slide ${index === currentSlide ? 'active' : ''}`}
           >
-            <img src={bannerImages[index]} alt={`배너 ${index + 1}`} />
+            <img src={bannerImages[index]} alt={banner.title} />
             <div className="banner-text">
-              <h2>{banner.title}</h2>
+              <h2><a href={`#/event/${index}`} tabIndex={index === currentSlide ? 0 : -1}>{banner.title}</a></h2>
               <p>{banner.subtitle}</p>
             </div>
           </div>
@@ -43,6 +43,7 @@ const MainBanner = () => {
       <div className="banner-indicators">
         {bannerSlides.map((_, index) => (
           <button
+            aria-label={bannerSlides[index].title}
             key={index}
             className={`indicator ${index === currentSlide ? 'active' : ''}`}
             onClick={() => setCurrentSlide(index)}

@@ -24,16 +24,16 @@ const LuckyOnly = () => {
   return (
     <section className="lucky-only">
       <h3>{t('luckyOnly.title')}</h3>
-      <img className="theme-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="테마 이미지" />
+      <a href="#/collection/1"><img className="theme-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt={t("luckyOnly.title")} /></a>
       <div className="related-products">
         {products.map((product, index) => (
-          <div className="product" key={index}>
+          <a className="product" href={`#/product/luckyOnly-${index}`} key={index}>
             <div className="product-image-wrapper">
               <img src={productImages[index]} alt={product.name} />
             </div>
             <div className="name">{product.name}</div>
             <div className="price">{product.price}</div>
-          </div>
+          </a>
         ))}
       </div>
     </section>

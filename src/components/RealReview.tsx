@@ -16,14 +16,14 @@ const RealReview = () => {
       <h3>{t('realReview.title')}</h3>
       <div className="review-list">
         {reviews.map((r, i) => (
-          <div className="review" key={i}>
-            <img src={images[i]} alt="리뷰 상품" />
+          <a className="review" href={`#/review/${i}`} key={i}>
+            <img src={images[i]} alt={t("realReview.title")} />
             <div className="info">
               <div className="user">{r.user} <span className="date">{r.date}</span></div>
               <div className="rating">{'★'.repeat(r.rating)}{'☆'.repeat(5 - r.rating)}</div>
               <div className="text">{r.text}</div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
